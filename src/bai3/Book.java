@@ -29,6 +29,11 @@ public class Book extends Document{
     public void setNumOfPage(int numOfPage) {
         this.numOfPage = numOfPage;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" + "id=" + this.getId() + ", publisher=" + this.getPublisher() + ", numberRelease=" + this.getNumberRelease() + "author=" + author + ", numOfPage=" + numOfPage + '}';
+    }
     
     
 }

@@ -34,6 +34,10 @@ public class Magazine extends Document{
     public void setPublishMon(int publishMon) {
         this.publishMon = publishMon;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Magazine{" + "id=" + this.getId() + ", publisher=" + this.getPublisher() + ", numberRelease=" + this.getNumberRelease() + "publishNum=" + publishNum + ", publishMon=" + publishMon + '}';
+    }
     
 }

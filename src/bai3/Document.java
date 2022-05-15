@@ -39,6 +39,11 @@ public class Document {
     public void setNumberRelease(int numberRelease) {
         this.numberRelease = numberRelease;
     }
+
+    @Override
+    public String toString() {
+        return "Document{" + "id=" + id + ", publisher=" + publisher + ", numberRelease=" + numberRelease + '}';
+    }
     
     
 }

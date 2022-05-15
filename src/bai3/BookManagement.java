@@ -155,19 +155,17 @@ public class BookManagement {
             case 3:
                 isValid = false;
                 do {
-                    System.out.print("Enter date release (yyyy-MM-dd): ");
+                    System.out.print("Enter date release (dd-MM-yyyy): ");
                     date = sc.nextLine().trim();
                     if (date.equals("")) {
                         System.out.println("Date can't be empty!");
                     }
                     if (!DateValidator.isDateValid(date)) {
-                        System.out.println("Date is not valid! (yyyy-MM-dd)");
+                        System.out.println("Date is not valid! Please enter (dd-MM-yyyy)");
                     } else {
                         isValid = true;
                     }
                 } while (isValid == false);
-                String[] arr = date.split("-");
-                date = arr[2] + "/" + arr[1] + "/" + arr[0];
                 list.add(new Newspaper(idDocument, publisher, numOfRelease, date));
         }
         return true;

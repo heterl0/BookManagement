@@ -15,7 +15,7 @@ import sun.font.SunFontManager;
  */
 public class DateValidator {
     public static boolean isDateValid(String date) {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         dateFormat.setLenient(false);
         try {
             dateFormat.parse(date);

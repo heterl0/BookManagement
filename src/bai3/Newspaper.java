@@ -24,4 +24,11 @@ public class Newspaper extends Document{
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Newspaper{" + "id=" + this.getId() + ", publisher=" + this.getPublisher() + ", numberRelease=" + this.getNumberRelease() + "date=" + date + '}';
+    }
+    
+    
 }
